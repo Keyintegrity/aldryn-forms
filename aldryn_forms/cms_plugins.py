@@ -1,7 +1,6 @@
 from typing import Dict
 
 from PIL import Image
-from aldryn_forms.models import FormPlugin
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
 from django import forms
@@ -32,7 +31,6 @@ from .forms import SelectFieldForm
 from .forms import TextAreaFieldForm
 from .forms import TextFieldForm
 from .helpers import get_user_name
-from .models import FileUploadFieldPlugin
 from .models import SerializedFormField
 from .signals import form_post_save
 from .signals import form_pre_save
