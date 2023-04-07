@@ -1,11 +1,9 @@
 import abc
 
-import six
 
-
-class BaseAction(six.with_metaclass(abc.ABCMeta)):
-
-    @abc.abstractproperty
+class BaseAction(metaclass=abc.ABCMeta):
+    @property
+    @abc.abstractmethod
     def verbose_name(self):
         pass  # pragma: no cover
 
